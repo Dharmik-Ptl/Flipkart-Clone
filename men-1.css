@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header {
+    width: 100%;
+}
+.cart-section {
+    width: 100%;
+    height: 56px;
+    background-color: #2874f0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 11;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* gap: 100px; */
+}
+.search-bar {
+    min-width: 500px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+}
+.search-bar i {
+    padding-right: 12px;
+    color: blue;
+    font-weight: bold;
+}
+.search-bar input {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    padding: 8px 10px;
+}
+.btn button {
+    border: none;
+    outline: none;
+    font-size: 17px;
+    font-weight: bold;
+    color: blue;
+    background-color: white;
+    padding: 5px 35px;
+    cursor: pointer;
+}
+.cart {
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.cart i {
+    padding-right: 8px;
+}
+.cart a {
+    text-decoration: none;
+    color: white;
+}
+.lists {
+    width: 100%;
+    position: relative;
+    top: 55px;
+    left: 0;
+    right: 0;
+    box-shadow: 0 0 5px grey;
+    padding: 10px 0;
+}
+.lists ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+}
+.lists ul li {
+    font-size: 15px;
+    font-weight: 550;
+    cursor: pointer;
+}
+.information {
+    /* border: 1px solid black; */
+    width: 100%;
+    height: 450px;
+    position: absolute;
+    top: 150px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.box-one {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    /* border: 1px solid black; */
+}
+
+.product-small-img {
+    height: 420px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 5px;
+    margin-left: 30px;
+}
+.product-small-img img {
+    height: 70px;
+    margin: 10px  0;
+    cursor: pointer;
+    display: block;
+    opacity: 0.8;
+    padding: 5px;
+}
+.product-small-img img:hover {
+    opacity: 1;
+    border: 1px solid black;
+}
+.img-container {
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+.img-container img {
+    height: 420px;
+    padding: 10px;
+    border-radius: 5px;
+}
+.box-two {
+    padding: 25px;
+    /* border: 1px solid black; */
+}
+
+.details h1,p,h3,li {
+    margin-bottom: 10px;
+}
+.details ul {
+    margin-left: 5%;
+}
+.details h4 {
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+.details h4 span:nth-child(1) {
+    font-size: 12px;
+    color: grey;
+    text-decoration: line-through;
+    padding-left: 7px;
+}
+.details h4 span:nth-child(2) {
+    font-size: 17px;
+    color: green;
+    padding-left: 7px;
+}
+.details button {
+    background-color: #ff9f00;
+    color: white;
+    margin-top: 25px;
+    margin-right: 20px;
+    font-size: 17px;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    padding: 10px 25px;
+    cursor: pointer;
+}
+.details button:nth-last-child(2) {
+    background-color: #fb641b;
+    color: white;
+}
+
+
+
+
+
+/* ------------------- */
+@media screen and (max-width: 1030px) {
+    .information {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 846px) {
+    .logo img {
+        width: 70px;
+    }
+    .search-bar {
+        min-width: 300px;
+    }
+    .btn button {
+        padding: 3px 25px;   
+        font-size: 14px;
+    }
+    section ul {
+        gap: 8px;
+    }
+}
+
+@media screen and (max-width: 556px) {
+    .logo img {
+        width: 50px;
+    }
+    .search-bar {
+        min-width: 200px;
+    }
+    .search-bar input {
+        font-size: 13px;
+        padding: 5px 8px;
+        text-overflow: ellipsis;
+    }
+    .btn button {
+        padding: 3px 15px;   
+        font-size: 10px;
+    }
+    .cart {
+        font-size: 14px;
+    }
+    .img-container img {
+        height: 350px;
+        padding: 10px;
+        border-radius: 5px;
+    }
+}
+
+@media screen and (max-width: 407px) {
+    .logo img {
+        width: 45px;
+    }
+    .search-bar {
+        min-width: 150px;
+    }
+    .search-bar input {
+        font-size: 11px;
+        padding: 3px 6px;
+    }
+    .btn button {
+        padding: 3px 12px;   
+        font-size: 8px;
+    }
+    .cart {
+        font-size: 12px;
+    }
+    .img-container img {
+        height: 300px;
+        padding: 10px;
+        border-radius: 5px;
+    }
+}
